@@ -133,22 +133,22 @@ footer {
     <h2>Projects</h2>
     <div class="grid">
 
-        <div class="card">
+ <div class="card">
             <h3>Zoonotic Surveillance</h3>
             <p>Metagenomic analysis of bird-human transmission using One Health approach.</p>
         </div>
 
-        <div class="card">
+  <div class="card">
             <h3>Single-cell ML</h3>
             <p>Random Forest classification of enhancer RNA signatures in cancer.</p>
         </div>
 
-        <div class="card">
+  <div class="card">
             <h3>Drug Discovery</h3>
             <p>Molecular docking & dynamics for AMR targets.</p>
         </div>
 
-    </div>
+</div>
 </section>
 
 <section id="publications">
