@@ -1,4 +1,4 @@
-# inquisithustler.github.io
+# Jigar Sheth.github.io
 Bioinformatics Scientist 
 ### Education
 Bioinformatics and Systems Biology, MSc
