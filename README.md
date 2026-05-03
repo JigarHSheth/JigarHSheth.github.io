@@ -1,4 +1,4 @@
-# jigarsheth.github.io
+# Jigar Sheth
 Bioinformatics Scientist 
 ### Education
 Bioinformatics and Systems Biology, MSc
