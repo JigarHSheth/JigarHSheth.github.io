@@ -127,6 +127,24 @@ footer {
     border-top: 1px solid #eee;
     color: var(--muted);
 }
+
+/* HERO LAYOUT */
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* mobile friendly */
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+}
 </style>
 </head>
 
@@ -134,8 +152,10 @@ footer {
 
 <!-- HERO -->
 <div class="hero">
-    <h1>Jigar Sheth</h1>
-    <p>Bioinformatics | Programming | ML & AI | Curiosity</p>
+      <div class="hero-content">
+        <img src="profile.jpg" alt="Jigar Sheth" class="profile-img">
+        <h1>Jigar Sheth</h1>
+        <p>Bioinformatics | Programming | ML & AI | Curiosity</p>
 </div>
 
 <!-- NAV -->
