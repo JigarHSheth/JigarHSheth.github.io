@@ -13,104 +13,250 @@
     --muted: #6c757d;
 }
 
-/* FORCE WHITE BACKGROUND */
+/* GLOBAL */
 html, body {
     margin: 0;
     padding: 0;
-    background: #ffffff !important;
+    background: #ffffff;
     color: var(--dark);
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 /* HERO */
 .hero {
     text-align: center;
-    padding: 6rem 2rem;
+    padding: 5rem 2rem 3rem;
 }
 
 .hero h1 {
     font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: var(--muted);
 }
 
 /* NAV */
 nav {
-    background: #ffffff;
+    position: sticky;
+    top: 0;
+    background: white;
     border-bottom: 1px solid #eee;
     text-align: center;
     padding: 1rem;
 }
 
 nav a {
-    margin: 0 10px;
+    margin: 0 15px;
     text-decoration: none;
     color: var(--dark);
+    font-weight: 600;
 }
 
 /* SECTION */
 section {
     max-width: 1000px;
     margin: auto;
-    padding: 3rem 1rem;
+    padding: 3rem 1.5rem;
 }
 
-/* GRID */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+h2 {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 5px;
 }
 
-.card {
-    border: 1px solid #eee;
-    padding: 20px;
-    border-radius: 10px;
+/* ACCORDION */
+.accordion-btn {
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    border: none;
+    background: #f8f9fa;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
+.accordion-btn:hover {
+    background: #e9ecef;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px 15px;
+    animation: fadeIn 0.3s ease;
+}
+
+/* SUB PROJECTS */
+.sub-btn {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    border: none;
+    background: #ffffff;
+    cursor: pointer;
+    margin-top: 5px;
+    border-left: 3px solid var(--accent);
+    transition: 0.3s;
+}
+
+.sub-btn:hover {
+    background: #f1f3f5;
+}
+
+.sub-content {
+    display: none;
+    padding-left: 20px;
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-5px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* FOOTER */
 footer {
     text-align: center;
     padding: 2rem;
+    border-top: 1px solid #eee;
+    color: var(--muted);
 }
 </style>
 </head>
 
 <body>
 
+<!-- HERO -->
 <div class="hero">
     <h1>Jigar Sheth</h1>
-    <p>Bioinformatics | NGS | Metagenomics | ML in Biology</p>
+    <p>Bioinformatics | Programming | ML & AI | Curiosity</p>
 </div>
 
+<!-- NAV -->
 <nav>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#publications">Publications</a>
 </nav>
 
+<!-- ABOUT -->
 <section id="about">
     <h2>About Me</h2>
-    <p>Bioinformatician specializing in NGS, Nanopore, and metagenomics.</p>
+    <p>
+        Hi! I am a Bioinformatician Scientist at GBRC. My research focuses on microbial metagenomics to study
+        microbial evolution, transmission, host-pathogen interactions to support the One Health framework.
+        I am also deeply interested in Computational Biology, Statistics, Generative AI, and Deep Learning.
+    </p>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
     <h2>Projects</h2>
-    <div class="grid">
-        <div class="card">Zoonotic Surveillance</div>
-        <div class="card">Single-cell ML</div>
-        <div class="card">Drug Discovery</div>
+
+    <!-- CATEGORY -->
+    <button class="accordion-btn">🧬 Metagenomics</button>
+    <div class="accordion-content">
+
+        <button class="sub-btn">Building a surveillance model to detect zoonotic spillovers across wet-lands & slaughterhouses</button>
+        <div class="sub-content">
+            <ul>
+                <li>Analyzed Nanopore and Illumina metagenomic datasets</li>
+                <li>Identified viral co-infections in clincal specimen (SARS-CoV-2 & Rhinovirus A,B)</li>
+                <li>Developing workflow for hybrid assemblies and characterisation of Bacteriophages</li>
+            </ul>
+        </div>
+
+        <button class="sub-btn">AES/AFI surveillance for epidemiological insights into prevalance of Chandipura virus in Gujarat, India</button>
+        <div class="sub-content">
+            <ul>
+                <li>Taxonomic profiling of clinical & vector specimen using Kraken2, GTDB-TK, GeNomad</li>
+                <li>Standarised workflow for retrieval of Metagenome-Assembled Genomes</li>
+            </ul>
+        </div>
+
     </div>
+
+    <!-- CATEGORY -->
+    <button class="accordion-btn">🤖 Single-cell & ML</button>
+    <div class="accordion-content">
+
+        <button class="sub-btn">eRNA Classification</button>
+        <div class="sub-content">
+            <ul>
+                <li>Designed Random Forest model for tumor subtype classification from scRNA-Seq dataset</li>
+                <li>Identified non-coding RNA expressions in estrogen-response pathways in KAS-Seq and GRO-Seq datasets</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- CATEGORY -->
+    <button class="accordion-btn">🧪 Structural Bioinformatics</button>
+    <div class="accordion-content">
+
+        <button class="sub-btn">Modelled pH-sensing residues in Lassa virus for their potential use as therapeutic targets</button>
+        <div class="sub-content">
+            <ul>
+                <li>Identified novel pH-sensitive residues (H141, H305)</li>
+            </ul>
+        </div>
+
+    </div>
+
 </section>
 
+<!-- PUBLICATIONS -->
 <section id="publications">
     <h2>Publications</h2>
     <ul>
-        <li>Enhancer RNAs in breast cancer</li>
-        <li>Bedaquiline resistance mutations</li>
+        <li>Subtype-specific enhancer RNAs define transcriptional regulators and prognosis in breast cancers</li>
+        <li>In silico structural and mechanical insights into bedaquiline resistance associated with high-grade
+        non-synonymous mutations in atpE, mmpR5, and pepQ</li>
+        <li>Designing multi-epitope based peptide vaccine targeting spike protein SARS-CoV-2 B1.1.529 (Omicron) variant
+        using computational approaches⁠</li>
     </ul>
 </section>
 
+<!-- FOOTER -->
 <footer>
     © 2026 Jigar Sheth
 </footer>
+
+<!-- SCRIPT -->
+<script>
+
+// CATEGORY TOGGLE
+document.querySelectorAll(".accordion-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        let content = btn.nextElementSibling;
+
+        // close others (clean UX)
+        document.querySelectorAll(".accordion-content").forEach(c => {
+            if (c !== content) c.style.display = "none";
+        });
+
+        content.style.display =
+            content.style.display === "block" ? "none" : "block";
+    });
+});
+
+// SUB TOGGLE
+document.querySelectorAll(".sub-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        let content = btn.nextElementSibling;
+
+        content.style.display =
+            content.style.display === "block" ? "none" : "block";
+    });
+});
+
+</script>
 
 </body>
 </html>
