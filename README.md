@@ -12,8 +12,7 @@
             --bg-color: #f4f7f6;
             --white: #ffffff;
         }
-        
-        body {
+         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: var(--text-color);
@@ -21,27 +20,24 @@
             margin: 0;
             padding: 0;
         }
-
-        header {
+          header {
             background-color: var(--primary-color);
             color: var(--white);
             text-align: center;
             padding: 4rem 2rem;
         }
-
-        header h1 {
+          header h1 {
             margin: 0;
             font-size: 3rem;
             letter-spacing: 2px;
         }
-
-        header p {
+         header p {
             font-size: 1.2rem;
             margin-top: 10px;
             color: var(--secondary-color);
         }
 
-        nav {
+ nav {
             background-color: #fff;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             position: sticky;
@@ -49,7 +45,7 @@
             z-index: 1000;
         }
 
-        nav ul {
+  nav ul {
             list-style: none;
             display: flex;
             justify-content: center;
@@ -57,28 +53,28 @@
             padding: 1rem;
         }
 
-        nav ul li {
+  nav ul li {
             margin: 0 15px;
         }
 
-        nav ul li a {
+   nav ul li a {
             text-decoration: none;
             color: var(--primary-color);
             font-weight: bold;
             transition: color 0.3s ease;
         }
 
-        nav ul li a:hover {
+nav ul li a:hover {
             color: var(--secondary-color);
         }
 
-        .container {
+  .container {
             max-width: 1000px;
             margin: 0 auto;
             padding: 2rem;
         }
 
-        section {
+  section {
             background: var(--white);
             padding: 2.5rem;
             margin-bottom: 2rem;
@@ -86,43 +82,43 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
 
-        h2 {
+  h2 {
             color: var(--primary-color);
             border-bottom: 2px solid var(--secondary-color);
             padding-bottom: 10px;
             margin-top: 0;
         }
 
-        .project-card {
+  .project-card {
             margin-bottom: 1.5rem;
             padding-bottom: 1.5rem;
             border-bottom: 1px solid #eee;
         }
 
-        .project-card:last-child {
+  .project-card:last-child {
             border-bottom: none;
             margin-bottom: 0;
             padding-bottom: 0;
         }
 
-        .project-title {
+   .project-title {
             font-size: 1.2rem;
             font-weight: bold;
             color: var(--primary-color);
             margin-bottom: 5px;
         }
 
-        .project-role {
+ .project-role {
             font-style: italic;
             color: #666;
             margin-bottom: 10px;
         }
 
-        ul.publication-list li, ul.project-details li {
+  ul.publication-list li, ul.project-details li {
             margin-bottom: 10px;
         }
 
-        footer {
+ footer {
             background-color: var(--primary-color);
             color: var(--white);
             text-align: center;
@@ -130,12 +126,12 @@
             margin-top: 2rem;
         }
 
-        footer a {
+  footer a {
             color: var(--secondary-color);
             text-decoration: none;
         }
         
-        .contact-info {
+  .contact-info {
             font-size: 1.1rem;
             margin-top: 15px;
         }
@@ -143,12 +139,12 @@
 </head>
 <body>
 
-    <header>
+<header>
         <h1>Jigar Sheth</h1>
         <p>Bioinformatician & Researcher</p>
     </header>
 
-    <nav>
+   <nav>
         <ul>
             <li><a href="#about">About Me</a></li>
             <li><a href="#projects">Research Projects</a></li>
@@ -157,17 +153,17 @@
         </ul>
     </nav>
 
-    <div class="container">
+   <div class="container">
         <section id="about">
             <h2>About Me</h2>
             <p>I am a Bioinformatician with strong experience in NGS and Nanopore sequencing data analysis, computational drug discovery, and ML pipeline development[cite: 4]. I am highly proficient in managing and transforming large-scale biological datasets into actionable insights using programming languages and high-performance computing (HPC) environments[cite: 5].</p>
             <p>My expertise spans Metagenomics, Transcriptomics, Single-cell genomics, Structural bioinformatics, and Statistical modeling[cite: 6]. I am a keen, motivated researcher, always curious to stay abreast of the latest advancements in bioinformatics[cite: 7].</p>
         </section>
 
-        <section id="projects">
+  <section id="projects">
             <h2>Research Projects</h2>
             
-            <div class="project-card">
+  <div class="project-card">
                 <div class="project-title">Zoonotic Spillover Surveillance & Pathogen Tracking [cite: 11]</div>
                 <div class="project-role">Project Research Scientist-1 | Gujarat Biotechnology Research Centre (GBRC) [cite: 9, 10]</div>
                 <ul class="project-details">
@@ -178,7 +174,7 @@
                 </ul>
             </div>
 
-            <div class="project-card">
+ <div class="project-card">
                 <div class="project-title">Machine Learning for Transcriptomics & Single-Cell Genomics [cite: 30, 44]</div>
                 <div class="project-role">ML Research Intern & Graduate Student | University of Manchester [cite: 31, 39, 40]</div>
                 <ul class="project-details">
@@ -188,7 +184,7 @@
                 </ul>
             </div>
 
-            <div class="project-card">
+  <div class="project-card">
                 <div class="project-title">Structural Bioinformatics & Drug Discovery [cite: 40, 46]</div>
                 <div class="project-role">Researcher | University of Manchester & GBU [cite: 40]</div>
                 <ul class="project-details">
@@ -198,7 +194,7 @@
             </div>
         </section>
 
-        <section id="publications">
+ <section id="publications">
             <h2>Publications</h2>
             <ul class="publication-list">
                 <li><strong>Subtype-specific enhancer RNAs define transcriptional regulators and prognosis in breast cancers.</strong> [cite: 53]</li>
@@ -207,7 +203,7 @@
             </ul>
         </section>
 
-        <section id="contact">
+   <section id="contact">
             <h2>Contact</h2>
             <p>If you work in Bioinformatics or a related field and want to collaborate, if you're looking to step into Computational Biology, or even if you just want to discuss science, I would be happy to hear from you!</p>
             <div class="contact-info">
@@ -217,11 +213,10 @@
         </section>
     </div>
 
-    <footer>
+  <footer>
         <p>&copy; 2026 Jigar Sheth. Designed for GitHub Pages.</p>
     </footer>
-
-    <script>
+  <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
