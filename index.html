@@ -24,8 +24,7 @@ html, body {
 
 /* HERO */
 .hero {
-    text-align: center;
-    padding: 5rem 2rem 3rem;
+    padding: 4rem 2rem;
 }
 
 .hero h1 {
@@ -132,15 +131,19 @@ footer {
 .hero-content {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap; /* mobile friendly */
+    justify-content: flex-start;
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
 }
 
+ .hero-content div {
+    text-align: left;
+}
 /* PROFILE IMAGE */
 .profile-img {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--accent);
@@ -153,9 +156,14 @@ footer {
 <!-- HERO -->
 <div class="hero">
       <div class="hero-content">
+          
         <img src="profile.jpg" alt="Jigar Sheth" class="profile-img">
-        <h1>Jigar Sheth</h1>
-        <p>Bioinformatics | Programming | ML & AI | Curiosity</p>
+         <div> 
+            <h1>Jigar Sheth</h1>
+            <p>Bioinformatics | Programming | ML & AI | Curiosity</p>
+        </div>
+          
+    </div>     
 </div>
 
 <!-- NAV -->
